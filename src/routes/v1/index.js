@@ -1,5 +1,8 @@
-const express = require('express')
+const express = require('express');
+const { createBooking } = require('../../controllers/booking-controller');
 const router = express.Router();
+
+ router.post('/create-booking',createBooking) 
 
 
 module.exports = router;
